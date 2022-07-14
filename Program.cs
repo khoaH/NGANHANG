@@ -31,6 +31,7 @@ namespace NGANHANG
         public static String mGroup = "";
         public static String mHoten = "";
 
+        public static Form.formLogin login;
         //public static NhanVien formNhanVien;
         //public static KhachHang formKhachHang;
 
@@ -40,6 +41,7 @@ namespace NGANHANG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new MainForm());
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace NGANHANG
+﻿namespace NGANHANG.forms
 {
     partial class MainForm
     {

@@ -178,8 +178,6 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\bin\Debug\es\DevExpress.Diagram.v
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csprojAssemblyReference.cache
-C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.formLogin.resources
-C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.MainForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Properties.Resources.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Report.XtraReport1.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.GenerateResource.cache
@@ -188,3 +186,5 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CoreCom
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CopyComplete
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.exe
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.pdb
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.FormLogin.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.MainForm.resources

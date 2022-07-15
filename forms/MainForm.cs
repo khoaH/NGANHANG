@@ -23,5 +23,12 @@ namespace NGANHANG.forms
             return null;
         }
 
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.conn.Close();
+            if (Program.login != null)
+                Program.login.Close();
+
+        }
     }
 }

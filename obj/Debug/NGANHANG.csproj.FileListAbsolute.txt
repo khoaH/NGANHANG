@@ -188,3 +188,5 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.exe
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.pdb
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.FormLogin.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.MainForm.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.ChuyenTienForm.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.GuiRutForm.resources

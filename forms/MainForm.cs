@@ -30,5 +30,30 @@ namespace NGANHANG.forms
                 Program.login.Close();
 
         }
+
+        private void btnChuyenTien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(ChuyenTienForm));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.chuyenTien = new ChuyenTienForm();
+                Program.chuyenTien.MdiParent = this;
+                Program.chuyenTien.Show();
+            }
+
+        }
+
+        private void btnGuiRut_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(GuiRutForm));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.guiRut = new GuiRutForm();
+                Program.guiRut.MdiParent = this;
+                Program.guiRut.Show();
+            }
+        }
     }
 }

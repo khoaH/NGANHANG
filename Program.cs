@@ -39,6 +39,8 @@ namespace NGANHANG
 
         public static FormLogin login;
         public static MainForm main;
+        public static ChuyenTienForm chuyenTien;
+        public static GuiRutForm guiRut;
         //public static NhanVien formNhanVien;
         //public static KhachHang formKhachHang;
 

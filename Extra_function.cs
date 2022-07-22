@@ -9,7 +9,7 @@ namespace NGANHANG
 {
     class Extra_function
     {
-        public static Boolean check_ID_TK(string SOTK)
+        public static bool check_ID_TK(string SOTK)
         {
             if (Program.conn.State == ConnectionState.Closed) Program.conn.Open();
             string str_sp = "dbo.SP_CHECK_ID_TK";
@@ -27,7 +27,7 @@ namespace NGANHANG
             return false;
         }
 
-        public static Boolean check_SODU(string SOTK, int SODU)
+        public static bool check_SODU(string SOTK, int SODU)
         {
             if (Program.conn.State == ConnectionState.Closed) Program.conn.Open();
             string str_sp = "dbo.SP_CHECK_SODU";

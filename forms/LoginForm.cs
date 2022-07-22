@@ -38,8 +38,8 @@ namespace NGANHANG.forms
 
             Program.servername = comboBoxChiNhanh.SelectedValue.ToString();
             Program.mChinhanh = comboBoxChiNhanh.SelectedIndex;
-            Program.mlogin = txtTaiKhoan.Text;
-            Program.password = txtMatKhau.Text;
+            Program.mlogin = Program.loginDN = txtTaiKhoan.Text;
+            Program.password = Program.passwordDN = txtMatKhau.Text;
 
             if (Program.KetNoi() == 0) return;
             MessageBox.Show("Đăng nhập thành công");

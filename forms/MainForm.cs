@@ -55,5 +55,18 @@ namespace NGANHANG.forms
                 Program.guiRut.Show();
             }
         }
+
+        private void btnTaoLogin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(TaoAccountForm));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.taoAccount = new TaoAccountForm();
+                Program.taoAccount.MdiParent = this;
+                Program.taoAccount.Show();
+            }
+
+        }
     }
 }

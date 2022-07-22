@@ -190,3 +190,4 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.FormLogi
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.MainForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.ChuyenTienForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.GuiRutForm.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.TaoAccountForm.resources

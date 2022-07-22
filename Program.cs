@@ -28,7 +28,7 @@ namespace NGANHANG
 
         //Tài khoản HTKN
         public static String remotelogin = "HTKN";
-        public static String remotepassword = "hanh123";
+        public static String remotepassword = "123";
         public static String mlogin = "";
         public static String password = "";
 
@@ -41,6 +41,7 @@ namespace NGANHANG
         public static MainForm main;
         public static ChuyenTienForm chuyenTien;
         public static GuiRutForm guiRut;
+        public static TaoAccountForm taoAccount;
         //public static NhanVien formNhanVien;
         //public static KhachHang formKhachHang;
 

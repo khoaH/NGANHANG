@@ -27,6 +27,7 @@ namespace NGANHANG.forms
 
         private void ChuyenTienForm_Load(object sender, EventArgs e)
         {
+            this.sP_DS_TAIKHOANTableAdapter.Connection.ConnectionString = Program.connstr;
             this.sP_DS_TAIKHOANTableAdapter.Fill(this.nGANHANGDataSet.SP_DS_TAIKHOAN);
             // TODO: This line of code loads data into the 'nGANHANGDataSet.TaiKhoan' table. You can move, or remove it, as needed.
 

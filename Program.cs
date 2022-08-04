@@ -42,6 +42,8 @@ namespace NGANHANG
         public static ChuyenTienForm chuyenTien;
         public static GuiRutForm guiRut;
         public static TaoAccountForm taoAccount;
+        public static TaiKhoanForm taiKhoan;
+        public static ReportGDForm reportGD;
         //public static NhanVien formNhanVien;
         //public static KhachHang formKhachHang;
 

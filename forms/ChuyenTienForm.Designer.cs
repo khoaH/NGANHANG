@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -528,6 +528,7 @@
             // 
             // colSOTK
             // 
+            this.colSOTK.DisplayFormat.FormatString = "{0:#,### VND}";
             this.colSOTK.FieldName = "SOTK";
             this.colSOTK.Name = "colSOTK";
             this.colSOTK.Visible = true;
@@ -562,11 +563,11 @@
             // 
             this.taiKhoanGridControl.DataSource = this.sP_DS_TAIKHOANBindingSource;
             this.taiKhoanGridControl.Dock = System.Windows.Forms.DockStyle.Top;
-            gridLevelNode3.RelationName = "Level1";
-            gridLevelNode4.RelationName = "Level2";
+            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level2";
             this.taiKhoanGridControl.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3,
-            gridLevelNode4});
+            gridLevelNode1,
+            gridLevelNode2});
             this.taiKhoanGridControl.Location = new System.Drawing.Point(0, 0);
             this.taiKhoanGridControl.MainView = this.gridView1;
             this.taiKhoanGridControl.MenuManager = this.barManager1;

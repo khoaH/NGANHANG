@@ -191,3 +191,6 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.MainForm
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.ChuyenTienForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.GuiRutForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.TaoAccountForm.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.TaiKhoanForm.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.ReportGDForm.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.reports.ReportGD.resources

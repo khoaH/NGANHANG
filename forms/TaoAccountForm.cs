@@ -160,5 +160,10 @@ namespace NGANHANG.forms
             else
                 return 0;
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

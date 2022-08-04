@@ -68,5 +68,34 @@ namespace NGANHANG.forms
             }
 
         }
+
+        private void btnKhachHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnTaiKhoan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(TaiKhoanForm));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.taiKhoan = new TaiKhoanForm();
+                Program.taiKhoan.MdiParent = this;
+                Program.taiKhoan.Show();
+            }
+        }
+
+        private void btnReportGD_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(ReportGDForm));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.reportGD = new ReportGDForm();
+                Program.reportGD.MdiParent = this;
+                Program.reportGD.Show();
+            }
+        }
     }
 }

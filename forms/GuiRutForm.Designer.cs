@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode5 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode6 = new DevExpress.XtraGrid.GridLevelNode();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -89,6 +89,8 @@
             this.tableAdapterManager = new NGANHANG.NGANHANGDataSetTableAdapters.TableAdapterManager();
             this.groupThongTin = new System.Windows.Forms.GroupBox();
             this.groupGuiRut = new System.Windows.Forms.GroupBox();
+            this.rbRut = new System.Windows.Forms.RadioButton();
+            this.rbGui = new System.Windows.Forms.RadioButton();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnGuiRut = new System.Windows.Forms.Button();
             this.txtMANV = new System.Windows.Forms.TextBox();
@@ -96,8 +98,6 @@
             this.txtSoTien = new System.Windows.Forms.TextBox();
             this.txtSoTK = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.rbGui = new System.Windows.Forms.RadioButton();
-            this.rbRut = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taiKhoanGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sP_DS_TAIKHOANBindingSource)).BeginInit();
@@ -219,11 +219,11 @@
             // 
             this.taiKhoanGridControl.DataSource = this.sP_DS_TAIKHOANBindingSource;
             this.taiKhoanGridControl.Dock = System.Windows.Forms.DockStyle.Top;
-            gridLevelNode3.RelationName = "Level1";
-            gridLevelNode4.RelationName = "Level2";
+            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level2";
             this.taiKhoanGridControl.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3,
-            gridLevelNode4});
+            gridLevelNode1,
+            gridLevelNode2});
             this.taiKhoanGridControl.Location = new System.Drawing.Point(0, 0);
             this.taiKhoanGridControl.MainView = this.gridView1;
             this.taiKhoanGridControl.Name = "taiKhoanGridControl";
@@ -247,6 +247,7 @@
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl4.Location = new System.Drawing.Point(1224, 0);
+            this.barDockControl4.Manager = null;
             this.barDockControl4.Size = new System.Drawing.Size(0, 587);
             // 
             // label1
@@ -369,11 +370,11 @@
             // 
             this.gridControl1.DataSource = this.sP_DS_TAIKHOANBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            gridLevelNode5.RelationName = "Level1";
-            gridLevelNode6.RelationName = "Level2";
+            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level2";
             this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode5,
-            gridLevelNode6});
+            gridLevelNode3,
+            gridLevelNode4});
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView2;
             this.gridControl1.Name = "gridControl1";
@@ -620,6 +621,28 @@
             this.groupGuiRut.TabStop = false;
             this.groupGuiRut.Text = "Gửi Rút";
             // 
+            // rbRut
+            // 
+            this.rbRut.AutoSize = true;
+            this.rbRut.Location = new System.Drawing.Point(184, 103);
+            this.rbRut.Name = "rbRut";
+            this.rbRut.Size = new System.Drawing.Size(42, 17);
+            this.rbRut.TabIndex = 6;
+            this.rbRut.Text = "Rút";
+            this.rbRut.UseVisualStyleBackColor = true;
+            // 
+            // rbGui
+            // 
+            this.rbGui.AutoSize = true;
+            this.rbGui.Checked = true;
+            this.rbGui.Location = new System.Drawing.Point(137, 103);
+            this.rbGui.Name = "rbGui";
+            this.rbGui.Size = new System.Drawing.Size(41, 17);
+            this.rbGui.TabIndex = 5;
+            this.rbGui.TabStop = true;
+            this.rbGui.Text = "Gửi";
+            this.rbGui.UseVisualStyleBackColor = true;
+            // 
             // btnThoat
             // 
             this.btnThoat.Location = new System.Drawing.Point(333, 195);
@@ -679,28 +702,6 @@
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Loại Giao Dịch";
-            // 
-            // rbGui
-            // 
-            this.rbGui.AutoSize = true;
-            this.rbGui.Checked = true;
-            this.rbGui.Location = new System.Drawing.Point(137, 103);
-            this.rbGui.Name = "rbGui";
-            this.rbGui.Size = new System.Drawing.Size(41, 17);
-            this.rbGui.TabIndex = 5;
-            this.rbGui.TabStop = true;
-            this.rbGui.Text = "Gửi";
-            this.rbGui.UseVisualStyleBackColor = true;
-            // 
-            // rbRut
-            // 
-            this.rbRut.AutoSize = true;
-            this.rbRut.Location = new System.Drawing.Point(184, 103);
-            this.rbRut.Name = "rbRut";
-            this.rbRut.Size = new System.Drawing.Size(42, 17);
-            this.rbRut.TabIndex = 6;
-            this.rbRut.Text = "Rút";
-            this.rbRut.UseVisualStyleBackColor = true;
             // 
             // GuiRutForm
             // 

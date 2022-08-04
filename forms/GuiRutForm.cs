@@ -45,6 +45,12 @@ namespace NGANHANG.forms
                 txtSoTK.Focus();
                 return;
             }
+            else if (txtSoTK.Text.Trim().Length > 9)
+            {
+                MessageBox.Show("Số tài khoản tối đa là 9 số");
+                txtSoTK.Focus();
+                return;
+            }
             else if (txtSoTien.Text.Trim() == "")
             {
                 MessageBox.Show("Bạn chưa nhập số tiền chuyển", "", MessageBoxButtons.OK);

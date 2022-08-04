@@ -51,9 +51,21 @@ namespace NGANHANG.forms
                 txtTKChuyen.Focus();
                 return;
             }
+            else if (txtTKChuyen.Text.Trim().Length > 9)
+            {
+                MessageBox.Show("Số tài khoản chuyển tối đa là 9 số");
+                txtTKChuyen.Focus();
+                return;
+            }
             else if (txtTKNhan.Text.Trim() == "")
             {
                 MessageBox.Show("Bạn chưa nhập số tài khoản nhận", "", MessageBoxButtons.OK);
+                txtTKNhan.Focus();
+                return;
+            }
+            else if (txtTKNhan.Text.Trim().Length > 9)
+            {
+                MessageBox.Show("Số tài khoản nhận tối đa là 9 số");
                 txtTKNhan.Focus();
                 return;
             }

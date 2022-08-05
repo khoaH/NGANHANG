@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,9 @@ namespace NGANHANG.forms
         public MainForm()
         {
             InitializeComponent();
+            stripMANV.Text = "Mã Nhân Viên: " + Program.username;
+            stripHoTen.Text = "Họ Tên: " + Program.mHoten;
+            stripNhom.Text = "Nhóm: " + Program.mGroup;
         }
         private Form CheckExists(Type ftype)
         {
@@ -71,7 +75,14 @@ namespace NGANHANG.forms
 
         private void btnKhachHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Form frm = this.CheckExists(typeof(FormKhachHang));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.formKhachHang = new FormKhachHang();
+                Program.formKhachHang.MdiParent = this;
+                Program.formKhachHang.Show();
+            }
         }
 
         private void btnTaiKhoan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -96,6 +107,44 @@ namespace NGANHANG.forms
                 Program.reportGD.MdiParent = this;
                 Program.reportGD.Show();
             }
+        }
+
+        private void btnNhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(FormNV));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.formNV = new FormNV();
+                Program.formNV.MdiParent = this;
+                Program.formNV.Show();
+            }
+        }
+
+        private void btnReportKhachHang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(Frpt_KhachHangTheoHoTen));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Program.reportKH = new Frpt_KhachHangTheoHoTen();
+                Program.reportKH.MdiParent = this;
+                Program.reportKH.Show();
+            }
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult ds = XtraMessageBox.Show("Bạn chắc chắn muốn đăng xuất không ?", "Thông báo !", MessageBoxButtons.YesNo);
+            if (ds == DialogResult.Yes)
+            {
+                Close();
+
+                Program.login.Visible = true;
+                Program.bds_dspm.RemoveFilter();
+                Program.login.loadAgain();
+            }
+
         }
     }
 }

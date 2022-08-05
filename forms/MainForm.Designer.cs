@@ -49,9 +49,9 @@
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripMANV = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripHoTen = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripNhom = new System.Windows.Forms.ToolStripStatusLabel();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -100,6 +100,7 @@
             this.btnDangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat.ImageOptions.SvgImage")));
             this.btnDangXuat.LargeWidth = 100;
             this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // btnNhanVien
             // 
@@ -109,6 +110,7 @@
             this.btnNhanVien.LargeWidth = 100;
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnNhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNhanVien_ItemClick);
             // 
             // btnChuyenTien
             // 
@@ -163,6 +165,7 @@
             this.btnReportKhachHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnReportKhachHang.ImageOptions.SvgImage")));
             this.btnReportKhachHang.LargeWidth = 120;
             this.btnReportKhachHang.Name = "btnReportKhachHang";
+            this.btnReportKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReportKhachHang_ItemClick);
             // 
             // btnTaiKhoan
             // 
@@ -229,32 +232,32 @@
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel3});
+            this.stripMANV,
+            this.stripHoTen,
+            this.stripNhom});
             this.statusStrip1.Location = new System.Drawing.Point(0, 587);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(986, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // stripMANV
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel1.Text = "MANV";
+            this.stripMANV.Name = "stripMANV";
+            this.stripMANV.Size = new System.Drawing.Size(42, 17);
+            this.stripMANV.Text = "MANV";
             // 
-            // toolStripStatusLabel2
+            // stripHoTen
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(49, 17);
-            this.toolStripStatusLabel2.Text = "HO TEN";
+            this.stripHoTen.Name = "stripHoTen";
+            this.stripHoTen.Size = new System.Drawing.Size(49, 17);
+            this.stripHoTen.Text = "HO TEN";
             // 
-            // toolStripStatusLabel3
+            // stripNhom
             // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(45, 17);
-            this.toolStripStatusLabel3.Text = "NHOM";
+            this.stripNhom.Name = "stripNhom";
+            this.stripNhom.Size = new System.Drawing.Size(45, 17);
+            this.stripNhom.Text = "NHOM";
             // 
             // xtraTabbedMdiManager1
             // 
@@ -295,9 +298,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel stripMANV;
+        private System.Windows.Forms.ToolStripStatusLabel stripHoTen;
+        private System.Windows.Forms.ToolStripStatusLabel stripNhom;
         private DevExpress.XtraBars.BarButtonItem btnNhanVien;
         private DevExpress.XtraBars.BarButtonItem btnChuyenTien;
         private DevExpress.XtraBars.BarButtonItem btnGuiRut;

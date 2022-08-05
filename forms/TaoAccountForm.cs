@@ -110,7 +110,7 @@ namespace NGANHANG.forms
             }
             else
             {
-                int status = TaoLogin(txtLoginName.Text.Trim(), lookUpNhanVien.EditValue.ToString().Trim(), txtPassword.Text.Trim(), Program.mGroup);
+                int status = TaoLogin2(txtLoginName.Text.Trim(), lookUpNhanVien.EditValue.ToString().Trim(), txtPassword.Text.Trim(), Program.mGroup);
                 if (status == 1)
                 {
                     MessageBox.Show("Tạo tài khoản thành công cho nhân viên: " + lookUpNhanVien.EditValue.ToString().Trim(), "", MessageBoxButtons.OK);
@@ -118,7 +118,7 @@ namespace NGANHANG.forms
                 }
                 else if (status == -1)
                 {
-                    MessageBox.Show("Login name bị trùng", "", MessageBoxButtons.OK);
+                    MessageBox.Show("Login name bị trùng hoặc đã có lỗi trong quá trình tạo tài khoản", "", MessageBoxButtons.OK);
                     txtLoginName.Focus();
                     return;
                 }
@@ -135,6 +135,31 @@ namespace NGANHANG.forms
                 }
             }
 
+        }
+
+        public int TaoLogin2(string loginName, string maNV, string pass, string nhomQuyen)
+        {
+            string strLenh = "EXEC SP_TAOLOGIN '" + loginName + "', '" + pass + "', '" + maNV + "', '" + nhomQuyen + "'";
+            Program.myReader = Program.ExecSqlDataReader(strLenh);
+            if (Program.myReader == null)
+                return -1;
+            else
+            {
+                return 1;
+                //Program.myReader.Read();
+                //int ret = Program.myReader.GetInt32(0);
+                //MessageBox.Show("Ret=" + ret, "", MessageBoxButtons.OK);
+                //Program.myReader.Close();
+                //if (ret == 1)
+                //    return 1; //Đã tạo
+                //else if (ret == -1)
+                //    return -1;
+                //else if (ret == -2)
+                //    return -2;
+                //else
+                //    return 0;
+            }
+            //Program.myReader.Close();
         }
 
         public int TaoLogin(string loginName, string maNV, string pass, string nhomQuyen)

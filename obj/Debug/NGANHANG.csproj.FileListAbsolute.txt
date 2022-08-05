@@ -179,7 +179,6 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\bin\Debug\ja\DevExpress.Diagram.v
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csprojAssemblyReference.cache
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Properties.Resources.resources
-C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Report.XtraReport1.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.GenerateResource.cache
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.exe.licenses
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.csproj.CoreCompileInputs.cache
@@ -194,3 +193,7 @@ C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.TaoAccou
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.TaiKhoanForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.ReportGDForm.resources
 C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.reports.ReportGD.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.forms.FormKhachHang.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.FormNV.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.Frpt_KhachHangTheoHoTen.resources
+C:\Users\Lenovo\source\repos\NGANHANG\NGANHANG\obj\Debug\NGANHANG.reports.Xrpt_KhachHangTheoHoTen.resources

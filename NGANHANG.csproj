@@ -72,12 +72,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Extra_function.cs" />
     <Compile Include="forms\ChuyenTienForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\ChuyenTienForm.Designer.cs">
       <DependentUpon>ChuyenTienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormNV.Designer.cs">
+      <DependentUpon>FormNV.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\GuiRutForm.cs">
       <SubType>Form</SubType>
@@ -123,6 +145,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="NGANHANGDataSet1.cs">
+      <DependentUpon>NGANHANGDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NGANHANGDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -130,20 +155,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="forms\Frpt_KhachHangTheoHoTen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Frpt_KhachHangTheoHoTen.Designer.cs">
+      <DependentUpon>Frpt_KhachHangTheoHoTen.cs</DependentUpon>
+    </Compile>
     <Compile Include="reports\ReportGD.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="reports\ReportGD.Designer.cs">
       <DependentUpon>ReportGD.cs</DependentUpon>
     </Compile>
-    <Compile Include="reports\XtraReport1.cs">
+    <Compile Include="reports\Xrpt_KhachHangTheoHoTen.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="reports\XtraReport1.Designer.cs">
-      <DependentUpon>XtraReport1.cs</DependentUpon>
+    <Compile Include="reports\Xrpt_KhachHangTheoHoTen.Designer.cs">
+      <DependentUpon>Xrpt_KhachHangTheoHoTen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="forms\ChuyenTienForm.resx">
       <DependentUpon>ChuyenTienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormNV.resx">
+      <DependentUpon>FormNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\GuiRutForm.resx">
       <DependentUpon>GuiRutForm.cs</DependentUpon>
@@ -174,13 +211,38 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="forms\Frpt_KhachHangTheoHoTen.resx">
+      <DependentUpon>Frpt_KhachHangTheoHoTen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reports\ReportGD.resx">
       <DependentUpon>ReportGD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports\XtraReport1.resx">
-      <DependentUpon>XtraReport1.cs</DependentUpon>
+    <EmbeddedResource Include="reports\Xrpt_KhachHangTheoHoTen.resx">
+      <DependentUpon>Xrpt_KhachHangTheoHoTen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsc">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS1.xss">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
     <None Include="NGANHANGDataSet.xsc">
       <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
     </None>

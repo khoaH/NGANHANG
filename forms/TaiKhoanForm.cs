@@ -27,10 +27,18 @@ namespace NGANHANG.forms
         private void TaiKhoanForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'nGANHANGDataSet1.SP_DS_KHACHHANG' table. You can move, or remove it, as needed.
+            this.sP_DS_KHACHHANGTableAdapter.Connection.ConnectionString = Program.connstr;
             this.sP_DS_KHACHHANGTableAdapter.Fill(this.nGANHANGDataSet1.SP_DS_KHACHHANG);
             this.taiKhoanTableAdapter.Connection.ConnectionString = Program.connstr;
             // TODO: This line of code loads data into the 'nGANHANGDataSet1.TaiKhoan' table. You can move, or remove it, as needed.
-            this.taiKhoanTableAdapter.Fill(this.nGANHANGDataSet1.TaiKhoan);
+            try
+            {
+                this.taiKhoanTableAdapter.Fill(this.nGANHANGDataSet1.TaiKhoan);
+            }
+            catch (Exception)
+            {
+
+            }
             if (Program.mGroup == "NGANHANG")
                 btnThemTK.Enabled = false;
         }
@@ -148,6 +156,22 @@ namespace NGANHANG.forms
         private void lookupKH_EditValueChanged(object sender, EventArgs e)
         {
             this.txtCMND.Text = this.lookupKH.EditValue.ToString();
+        }
+
+        private void txtSoDu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSoTK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -82,5 +82,16 @@ namespace NGANHANG.forms
                 Program.login.Close();
             Close();
         }
+
+        public void loadAgain()
+        {
+            comboBoxChiNhanh.SelectedItem = Program.mChinhanh;
+            Program.servername = comboBoxChiNhanh.SelectedValue.ToString();
+        }
+
+        public void visibleAgain()
+        {
+            Program.login.Visible = true;
+        }
     }
 }

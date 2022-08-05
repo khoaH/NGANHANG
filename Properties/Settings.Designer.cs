@@ -33,5 +33,16 @@ namespace NGANHANG.Properties {
                 return ((string)(this["NGANHANGConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0PH6D87\\SERVER1;Initial Catalog=NGANHANG;Persist Security Inf" +
+            "o=True;User ID=sa;Password=123")]
+        public string NGANHANGConnectionString1 {
+            get {
+                return ((string)(this["NGANHANGConnectionString1"]));
+            }
+        }
     }
 }
